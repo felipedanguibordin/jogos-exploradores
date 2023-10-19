@@ -1,0 +1,69 @@
+<app-header></app-header>
+<div class="bg-modal bg-sugerir">
+  <div class="box-center">
+    <div class="header">
+      <div class="row">
+        <div class="col-9">
+          <span>SUGERINDO JOGO</span>
+        </div>
+        <div class="col-3 d-flex justify-content-end">
+          <box-icon
+            style="float: right; cursor: pointer"
+            name="x-circle"
+            size="sm"
+            animation="tada-hover"
+            pull="right"
+            color="#fff"
+            (click)="fnCloseModal()"
+          ></box-icon>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <form [formGroup]="formInsert">
+        <div class="row">
+          <div class="col-4">
+            <label>Nome do jogo</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="iptNome"
+            />
+          </div>
+
+          <div class="col-4">
+            <label>Data</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="iptData"
+              mask="00/00/0000"
+              placeholder="00/00/0000"
+            />
+          </div>
+        </div>
+
+        <label for="exampleFormControlTextarea1" class="form-label mt-2"
+          >Descrição</label
+        >
+        <textarea
+          formControlName="descricao"
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="8"
+        ></textarea>
+      </form>
+      <div class="footer">
+        <div class="col-md-8 mt-1 d-flex justify-content-end">
+          <button class="btn btn-sm btn-salvar" (click)="fnSalvaSugestao()">
+            Salvar
+          </button>
+          &nbsp; &nbsp;
+          <button class="btn btn-sm btn-dark" (click)="fnCloseModal()">
+            Cancelar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+.box-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.816) 0%,
+    rgba(63, 63, 63, 0) 99%
+  );
+}
+
+span {
+  color: #a8a8a8;
+}
+
+.card-body {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 20% 30px 0px 30px;
+}
+
+input {
+  border-radius: 5px;
+  background-color: #e2e4e7;
+  font-size: 20px;
+}
+
+.btn-animated {
+  animation: moveInBottom 1s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.bg-login {
+  background: url("../../../assets/img/imagemfundo.png") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  font-size: 6rem;
+}
+
+button {
+  background-color: #6c6c6c !important;
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: #42424297 !important;
+}
+
+@media only screen and (max-width: 771px) {
+  .center-align {
+    left: 58%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .center-align {
+    left: 58%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-acesso {
+    background: none;
+  }
+  .css-typing {
+    display: none;
+  }
+}
+
+.container-acesso {
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  height: 100vh;
+  position: relative;
+  margin-left: -15px;
+}
+
+.center-align {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  /* width: 60%; */
+}
+
+/*INICIO TYPING WRITER*/
+.css-typing {
+  margin-top: 25%;
+  margin-left: 5%;
+  transform: translateY(-50%);
+}
+
+.frm-signin-typeit-write {
+  font-size: 3.85rem;
+  color: #fff;
+  margin-left: 10%;
+  width: 50%;
+}

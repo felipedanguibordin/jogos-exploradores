@@ -1,0 +1,52 @@
+.bg-quero-jogar {
+  height: 100%;
+  background: none;
+  background: url(../../../assets/img/imagemfundo.png) no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100vh;
+  padding-left: 305px !important;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 6px 6px 6px 6px;
+  color: #f1f1f1;
+}
+
+.texto-lista-cima {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+h1 {
+  color: #fff;
+}
+
+.card {
+  border: none;
+  background-color: #252933;
+  color: #c9d3d6;
+  font-size: 14px;
+}
+
+.card-body {
+  padding: 3px 10px 10px 10px;
+}
+
+.container {
+  border: none;
+  background-color: #383838;
+  color: #c9d3d6;
+  font-size: 14px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 14px;
+  overflow-y: auto;
+  width: 97%;
+}
+
+.texto {
+  font-size: 18px;
+}

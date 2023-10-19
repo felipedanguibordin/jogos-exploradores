@@ -1,0 +1,63 @@
+<app-header></app-header>
+<div class="bg-dashboard">
+  <div class="container-fluid">
+    <form [formGroup]="fromFilter">
+      <div class="row">
+        <span class="titulo">DASHBOARD</span>
+
+        <div class="card mt-2" style="width: 99%; margin-left: 5px">
+          <div class="card-body">
+            <div class="text-center" *ngIf="loadingTable">
+              <span>Buscando listagem, aguarde...</span>
+            </div>
+            <span
+              >Listando:
+              <span style="color: #c9d3d6">{{listJogos.length}}</span></span
+            >
+
+            <div class="table-responsive" *ngIf="!loadingTable">
+              <table
+                class="table table-sm table-striped table-borderless table-hover table-dark"
+              >
+                <thead>
+                  <tr>
+                    <th class="text-center">NÚMERO</th>
+                    <th class="text-center">NOME</th>
+                    <th class="text-center">DATA</th>
+                    <th class="text-center">JOGAR</th>
+                    <th class="text-center">VIZUALIZAR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of listJogos; let i = index">
+                    <td class="text-center">{{ item.numero }}</td>
+                    <td class="text-center">{{ item.titulo }}</td>
+                    <td class="text-center">
+                      {{ item.data | date: 'dd/MM/YYYY': 'GMT'}}
+                    </td>
+                    <td class="text-center">
+                      <button
+                        class="btn btn-link"
+                        (click)="participarDaListaEspera(item, i)"
+                      >
+                        Participar
+                      </button>
+                    </td>
+                    <td class="text-center">
+                      <box-icon
+                        type="solid"
+                        name="comment-detail"
+                        color="#61686b"
+                        animation="tada-hover"
+                      ></box-icon>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

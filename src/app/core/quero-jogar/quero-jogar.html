@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="bg-quero-jogar">
+  <div class="container-fluid">
+    <div class="row">
+      <span class="titulo">LISTA DE ESPERA</span>
+
+      <div class="card mt-2" style="width: 99%">
+        <div class="card-body">
+          <div class="text-center">
+            <span class="texto-lista-cima"
+              >Lista de Jogos Disponíveis para Participar</span
+            >
+          </div>
+
+          <div class="table-responsive mt-2">
+            <table
+              class="table table-sm table-striped table-borderless table-hover table-dark"
+            >
+              <thead>
+                <tr>
+                  <th class="text-center">JOGADOR</th>
+                  <th class="text-center">JOGO</th>
+                  <th class="text-center">DATA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of listaDeEspera">
+                  <td class="text-center">{{ item.nome }}</td>
+                  <td class="text-center">{{ item.jogo.titulo }}</td>
+                  <td class="text-center">
+                    {{ item.jogo.data | date: 'dd/MM/yyyy' }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

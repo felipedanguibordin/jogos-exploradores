@@ -1,0 +1,92 @@
+.bg-sugerir {
+  height: 100%;
+  background: none;
+  background: url(../../../assets/img/imagemfundo.png) no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100vh;
+  padding-left: 300px !important;
+}
+
+.bg-modal {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.575);
+  z-index: 4;
+}
+
+.box-center {
+  justify-content: center;
+  align-items: center;
+  margin-right: 28%;
+  margin-left: 28%;
+  margin-top: 7%;
+  background-color: #383838;
+  border-radius: 10px;
+}
+
+.header {
+  width: 100%;
+  padding: 8px 8px 8px 8px;
+  background-color: #1e1f1f;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header span {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.body {
+  height: 100%;
+  padding: 8px 8px 8px 8px;
+}
+
+label {
+  color: #c9d3d6;
+  padding: 8px 8px 8px 8px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+
+button {
+  width: 100px;
+}
+
+input,
+textarea,
+select {
+  background-color: #383838;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #383838;
+  color: #fff;
+}
+
+.btn-salvar {
+  background-color: #0b2545;
+  border: none;
+  color: #fff;
+}
+
+.btn-salvar:hover {
+  background-color: #0c376b !important;
+  border: none;
+  color: #fff;
+}

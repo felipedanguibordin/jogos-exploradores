@@ -1,0 +1,45 @@
+<div class="menu">
+  <div class="menu-body">
+    <div
+      class="menu-opts"
+      style="border-bottom: 1px solid #393f4d"
+      (click)="fnChangeRouter('/dashboard')"
+    >
+      <box-icon
+        name="home"
+        style="cursor: pointer; float: left"
+        type="solid"
+        color="#61686b"
+        animation="tada-hover"
+      ></box-icon>
+      <span>DASHBOARD</span>
+    </div>
+
+    <div
+      class="menu-opts"
+      *ngFor="let item of arrayRotas"
+      (click)="fnChangeRouter(item.rota)"
+    >
+      <box-icon
+        name="label"
+        style="cursor: pointer; float: left"
+        type="solid"
+        color="#61686b"
+        animation="tada-hover"
+      ></box-icon>
+      <span>{{item.label}}</span>
+    </div>
+  </div>
+
+  <div class="menu-footer">
+    <box-icon
+      name="door-open"
+      style="cursor: pointer; float: left"
+      type="solid"
+      color="#61686b"
+      animation="tada-hover"
+      (click)="fnDeslogar()"
+    ></box-icon>
+    <span (click)="fnDeslogar()">SAIR</span>
+  </div>
+</div>
